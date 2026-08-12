@@ -1,0 +1,49 @@
+.player {
+    height: 100vh;
+    width: 100vw;
+    background-color: #0f0f0f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+}
+  
+.player img {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 35px;
+    cursor: pointer;
+    z-index: 10;
+    transition: transform 0.2s ease;
+}
+
+.player img:hover {
+    transform: scale(1.1);
+}
+  
+.player video {
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    background: black;
+}
+  
+.player-info {
+    margin-top: 20px;
+    text-align: center;
+    width: 90%;
+}
+  
+.player-info p:nth-child(1) {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e50914;
+    margin-bottom: 5px;
+}
+  
+.player-info p:nth-child(2) {
+    font-size: 0.9rem;
+    color: #aaaaaa;
+}

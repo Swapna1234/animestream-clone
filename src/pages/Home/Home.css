@@ -1,0 +1,112 @@
+.anime-section {
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+    overflow: hidden;
+  }
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 10;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-text h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .hero-text p {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;       
+    font-style: normal;
+    font-size: 18px;
+    line-height: 150%;      
+    text-align: center;
+    color: #bbb;             
+    max-width: 700px;
+    margin: 1.5rem auto 0 auto; 
+  }
+  .watch-btn {
+    margin-top: 2.5rem;
+    background: #e50914;
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .watch-btn:hover {
+    background: #f40612; 
+    transform: scale(1.05);
+  }
+  
+.overlay {
+    position: absolute;  
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; 
+  }
+  .anime-grid {
+    background: #1c1c1c; 
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  }
+  .anime-grid:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+  }
+  .anime-grid img {
+    opacity: 0.3;  
+    transition: opacity 0.3s ease;
+  }
+
+  .anime-section .anime-grid {
+    position: absolute;   
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;       
+  }
+
+  .anime-grid-bg {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.75); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .bg-rectangle {
+    position: absolute;
+    width: 20%; 
+    max-width: 90px;
+    opacity: 0.8;
+  }
+  
+  .center-vector {
+    position: relative;
+    width: 17%; 
+    height: auto;
+  }
+  .main-header{
+    margin-top: 20px;
+  }

@@ -1,0 +1,109 @@
+.navbar{
+    width:100%;
+    padding:15px 6%;
+    display:flex;
+    justify-content: space-between;
+    position: fixed;
+    font-size: 14px; 
+    color: #e5e5e5;
+    background: rgba(15, 15, 15, 0.7);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    z-index:1000;
+    transition: background 0.3s ease;
+}
+.navbar-left{
+    display: flex;
+    align-items: center;
+    gap:10px;
+
+}
+.navbar-left p {
+    font-size: 30px;
+    color: #FFFFFF;
+    font-family: 'Poppins', 'Inter', sans-serif;
+    font-weight: 700;
+}
+.navbar-left img{
+    width: 90px;
+}
+.navbar-left ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.navbar-left ul li{
+    cursor: pointer;
+}
+.navbar-right{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.navbar-right .icons{
+    width: 20px;
+    cursor: pointer;
+} 
+.navbar-right .profile{
+    border-radius: 4px;
+    width: 35px;
+}
+.navbar-profile{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    cursor:pointer;
+    position:relative;
+}
+.navbar .dropdown{
+    position:absolute;
+    top: 100%;
+    right: 0%;
+    width: max-content;
+    background: #191919;
+    padding: 18px 22px;
+    border-radius: 2px;
+    text-decoration: underline;
+    z-index: 1;
+    display: none;
+}
+.navbar .dropdown p{
+    font-size: 13px;
+    cursor: pointer;
+}
+.navbar-profile:hover .dropdown{
+    display: block;
+
+}
+
+.nav-container {
+    margin-top:20px;
+    display: flex;
+    gap: 24px;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px 24px;
+    border-radius: 16px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
+  }
+  
+  .nav-item {
+    background: transparent;
+    border: none;
+    color: #bbb;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-item:hover {
+    color: #fff;
+  }
+  
+  .nav-item.active {
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+  }
+  

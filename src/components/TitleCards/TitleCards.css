@@ -1,0 +1,65 @@
+.title-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px 40px;
+    background: transparent;
+    overflow: visible;
+}
+
+.category-row {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #e5e5e5;
+    padding-left: 10px;
+}
+
+.category-header h2 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.cards-scroll-container {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.cards-scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    min-width: 220px;
+    max-width: 220px;
+    height: 330px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}

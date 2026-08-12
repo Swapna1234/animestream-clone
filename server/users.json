@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1786346434856,
+    "name": "test",
+    "email": "test@test.com",
+    "password": "hash"
+  },
+  {
+    "id": 1786346662609,
+    "name": "Swapna",
+    "email": "swapnapujary2001@gmail.com",
+    "password": "$2b$10$kPMi4xyDLowcXAJ6qSc0n.B5O.hGjgpt4M/brzH3Vm6gpkoHVJLu."
+  },
+  {
+    "id": 1786535773098,
+    "name": "KINGTIGER",
+    "email": "KINGTIGER@GMAIL.COM",
+    "password": "$2b$10$rQtc5klnGqcMBAqWTXhfqedUW7eAkiI3VIqMbFij9ZJWpjyCUr8xC"
+  }
+]

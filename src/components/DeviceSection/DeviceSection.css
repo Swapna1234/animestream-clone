@@ -1,0 +1,70 @@
+.devices-section {
+    padding: 60px 8%;
+    text-align: center;
+    color: #fff;
+    background: #121212;
+  }
+  
+  .devices-section h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  
+  .devices-subtitle {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    font-size: 16px;
+    color: #aaa;
+  }
+  
+  .devices-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+  
+  .device-card {
+    position: relative;
+    background: #111; /* dark background */
+    border-radius: 12px;
+    padding: 20px;
+    color: #fff;
+    overflow: hidden; /* ensures shadow overlay stays inside */
+    transition: all 0.3s ease;
+  }
+  
+  /* Add a red shadowy background effect */
+  .device-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top left, rgba(255, 0, 0, 0.15), transparent 70%);
+    z-index: 0;
+  }
+  
+  .device-card * {
+    position: relative;
+    z-index: 1; /* keeps text & icons above the shadow */
+  }
+  
+  .device-card:hover::before {
+    background: radial-gradient(circle at center, rgba(255, 0, 0, 0.25), transparent 80%);
+  }
+  
+  
+  
+  .device-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .device-card p {
+    font-size: 14px;
+    color: #bbb;
+    line-height: 1.5;
+  }
+  
+  
+  
