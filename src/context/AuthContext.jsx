@@ -9,8 +9,8 @@ export const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     const fetchUser = async () => {
-      try {
-        if (token) {
+      if (token) {
+        try {
           const res = await fetch('https://animestream-clone.onrender.com/api/auth/me', {
             headers: {
               'Authorization': `Bearer ${token}`
