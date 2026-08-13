@@ -12,10 +12,10 @@ import ProtectedRoute from './components/ProtectedRoute'
 
 export const App = () => {
   useEffect(() => {
-    fetch('/api/status')
+    fetch('https://animestream-clone.onrender.com/api/status')
       .then(res => res.json())
-      .then(data => console.log('Backend connection successful:', data))
-      .catch(err => console.error('Backend connection failed:', err));
+      .then(data => console.log('Backend Status:', data))
+      .catch(err => console.error('Backend Error:', err));
   }, []);
 
   return (

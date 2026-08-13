@@ -17,7 +17,7 @@ const Login = () => {
     e.preventDefault();
     setError('');
 
-    const endpoint = signState === 'Sign In' ? '/api/auth/login' : '/api/auth/signup';
+    const endpoint = signState === 'Sign In' ? 'https://animestream-clone.onrender.com/api/auth/login' : 'https://animestream-clone.onrender.com/api/auth/signup';
     const payload = signState === 'Sign In' ? { email, password } : { name, email, password };
 
     try {
